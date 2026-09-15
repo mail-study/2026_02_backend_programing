@@ -1,7 +1,0 @@
-INDEX VERSION 1.4+/Users/imjeonghyeog/workspace/backend/.metadata/.plugins/org.eclipse.wst.jsdt.core/indexes
-3753754482.index
-1653513595.index
-3908793321.index
-1610751593.index
-995284793.index
-1280698287.index

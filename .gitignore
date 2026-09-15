@@ -1,0 +1,29 @@
+# OS
+.DS_Store
+Thumbs.db
+
+# Eclipse workspace metadata
+.metadata/
+
+# Eclipse build output
+build/
+bin/
+target/
+
+# Eclipse project files (uncomment if you don't want to share project settings)
+# .settings/
+# .classpath
+# .project
+
+# Tomcat runtime
+**/apache-tomcat-*/logs/
+**/apache-tomcat-*/temp/
+**/apache-tomcat-*/work/
+*.log
+
+# Java
+*.class
+
+# IDE
+.idea/
+*.iml
