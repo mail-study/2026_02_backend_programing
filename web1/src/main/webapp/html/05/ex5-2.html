@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>주간 식단 안내</title>
+        <style>
+            .tab-menu {
+                padding: 0;
+                margin-bottom: 10px;
+            }
+
+            .tab-menu li {
+                display: inline-block;
+                list-style-type: none;
+                padding: 5px 12px;
+                background: olive;
+                color: wheat;
+            }
+
+            .tab-menu li:hover {
+                background: darkolivegreen;
+                color: yellow;
+            }
+
+            table {
+                border-collapse: collapse;
+                width: 260px;
+                text-align: center;
+            }
+            th,
+            td {
+                border: 1px solid gray;
+                padding: 6px;
+            }
+            thead th {
+                background: darkgray;
+                color: yellow;
+            }
+            /* tbody tr:nth-child(even) {
+
+            } */
+        </style>
+    </head>
+    <body>
+        <h3>카페테리어 주간 식단</h3>
+        <hr />
+        <ul class="tab-menu">
+            <li>한식</li>
+            <li>양식</li>
+        </ul>
+        <table>
+            <thead>
+                <tr>
+                    <th>요일</th>
+                    <th>구분</th>
+                    <th>메뉴</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td rowspan="2">월</td>
+                    <td>점심</td>
+                    <td>비빔밥</td>
+                </tr>
+                <tr>
+                    <td>저녁</td>
+                    <td>김치찌개</td>
+                </tr>
+                <tr>
+                    <td rowspan="2">화</td>
+                    <td>점심</td>
+                    <td>돈까스</td>
+                </tr>
+                <tr>
+                    <td>저녁</td>
+                    <td>스파게티</td>
+                </tr>
+            </tbody>
+        </table>
+    </body>
+</html>

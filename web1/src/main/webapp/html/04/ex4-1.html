@@ -1,0 +1,59 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>컴퓨터공학과 공지사항</title>
+    </head>
+    <style>
+        body {
+            background-color: linen;
+            color: navy;
+            margin-left: 30px;
+            margin-right: 30px;
+        }
+        h2 {
+            text-align: center;
+            color: darkred;
+        }
+        h2:first-letter {
+            font-size: 30px;
+            color: red;
+        }
+        #notice-list {
+            background-color: aliceblue;
+            padding: 15px;
+        }
+        #notice-list li:hover {
+            background-color: yellowgreen;
+        }
+        #notice-list > li > strong {
+            color: blueviolet;
+        }
+
+        .urgent {
+            color: crimson;
+        }
+
+        a:link {
+            color: dodgerblue;
+        }
+
+        a:visited {
+            color: gray;
+        }
+    </style>
+    <body>
+        <h2>학과 주요 공지사항</h2>
+        <hr />
+        <p>아래 공지사항을 숙지하세요.</p>
+        <ul id="notice-list">
+            <li><strong>[중요] </strong>2학기 중간고사 일정 안내</li>
+            <li class="urgent"><strong>[긴급] </strong>백엔드 프로그래밍 과제 제출 기한 변경</li>
+            <li><span>[특강] </span>개발자 초청 세미나 신청</li>
+        </ul>
+        <p>
+            추가 문의 사항은
+            <a href="https://naver.com" tartget="_blank">학과 포털 사이트를</a> 확인하세요
+        </p>
+    </body>
+</html>

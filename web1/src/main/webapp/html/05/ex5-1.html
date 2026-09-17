@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>크리스마스 카드</title>
+        <style>
+            #card {
+                position: relative;
+                display: inline-block;
+                cursor: pointer;
+            }
+
+            #star {
+                position: absolute;
+                top: 15px;
+                left: 88px;
+                color: red;
+                font-size: 24px;
+                visibility: hidden;
+            }
+            #card:active #star {
+                visibility: visible;
+            }
+            .hint span {
+                visibility: hidden;
+                color: blue;
+            }
+
+            .hint:hover span {
+                visibility: visible;
+            }
+            #banner {
+                position: fixed;
+                bottom: 10px;
+                right: 10px;
+                background: red;
+                color: wheat;
+                padding: 5px;
+            }
+        </style>
+    </head>
+    <body>
+        <h3>Merry Christmas</h3>
+        <hr />
+        <div id="card">
+            <img src="../../web1_media/05/christmastree.png" width="200" height="230" alt="트리" />
+            <div id="star">*</div>
+        </div>
+        <p class="hint">마우스를 올리면 메시지 확인: <span>트리를 꾹 클릭해보세요!</span></p>
+        <div id="banner">12월 2026년 12월 25일 성탄절</div>
+    </body>
+</html>
