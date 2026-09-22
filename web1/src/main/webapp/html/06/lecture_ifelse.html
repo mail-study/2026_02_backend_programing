@@ -15,6 +15,21 @@
                 let lec3 = '3. 웹 프로그래밍';
                 let lecture_list = lec1 + '\n' + lec2 + '\n' + lec3;
                 let choice = prompt('수강 과목을 선택하세용. \n' + lecture_list);
+
+                if (choice == '1') {
+                    title = lec1;
+                } else if (choice == '2') {
+                    title = lec2;
+                } else if (choice == '3') {
+                    title = lec3;
+                } else {
+                    alert('없는 과목을 선택하셨습니다');
+                    title = '';
+                }
+
+                document.write('<tr>');
+                document.write('<td>' + title + '</td>');
+                document.write('</tr>');
             </script>
         </table>
     </body>
