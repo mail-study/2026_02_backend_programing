@@ -1,10 +1,41 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
-<head>
-<meta charset="UTF-8">
-<title>Insert title here</title>
-</head>
-<body>
+    <head>
+        <meta charset="UTF-8" />
+        <title>be1-2_임정혁_202517096</title>
+    </head>
+    <body>
+        <script>
+            let totalCount = 0;
+            let totalPrice = 0;
 
-</body>
+            while (true) {
+                let price = parseInt(prompt('음료 가격을 입력하세요. (종료하려면 0 입력)'));
+
+                if (price == 0) {
+                    break;
+                }
+
+                totalCount++;
+                totalPrice += price;
+            }
+            // 주문이 하나도 없는 경우
+            if (totalCount === 0) {
+                document.write('<h3>[ 주문 영수증 ]</h3>');
+                document.write('<p>주문 내역이 없습니다.</p>');
+            } else {
+                let finalPrice = totalPrice;
+                let discountText = '';
+                // 15,000원 이상이면 1,000원 할인
+                if (totalPrice >= 15000) {
+                    finalPrice = totalPrice - 1000;
+                    discountText = ' (할인 적용)';
+                }
+                document.write('<h3>[ 주문 영수증 ]</h3>');
+                document.write('<p>주문한 음료: 총 ' + totalCount + '잔</p>');
+                document.write('<p>합계 금액: ' + totalPrice + '원</p>');
+                document.write('<p>최종 결제 금액: ' + finalPrice + '원' + discountText + '</p>');
+            }
+        </script>
+    </body>
 </html>
